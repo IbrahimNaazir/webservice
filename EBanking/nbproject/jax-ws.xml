@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
+  <services>
+    <service name="Login">
+      <implementation-class>employee_ws.Login</implementation-class>
+    </service>
+    <service name="ManageEmployees">
+      <implementation-class>employee_ws.ManageEmployees</implementation-class>
+    </service>
+    <service name="displayCustomer">
+      <implementation-class>customer_ws.displayCustomer</implementation-class>
+    </service>
+    <service name="ManageCustomers">
+      <implementation-class>customer_ws.ManageCustomers</implementation-class>
+    </service>
+    <service name="AddCustomer">
+      <implementation-class>customer_ws.AddCustomer</implementation-class>
+    </service>
+  </services>
+  <clients>
+    <client name="Login">
+      <wsdl-url>http://localhost:8080/employee_ws/Login?wsdl</wsdl-url>
+      <local-wsdl-file>localhost_8080/employee_ws/Login.wsdl</local-wsdl-file>
+      <package-name>login_ws</package-name>
+      <catalog-file>catalog.xml</catalog-file>
+      <wsimport-options>
+        <wsimport-option>
+          <wsimport-option-name>extension</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>verbose</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>fork</wsimport-option-name>
+          <wsimport-option-value>false</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>wsdlLocation</wsimport-option-name>
+          <wsimport-option-value>http://localhost:8080/employee_ws/Login?wsdl</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>xnocompile</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>xendorsed</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+      </wsimport-options>
+    </client>
+  </clients>
+</jax-ws>
